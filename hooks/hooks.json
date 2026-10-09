@@ -1,0 +1,89 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000,
+            "statusMessage": "Checking interrupted ZCode task recovery"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "C:\\Windows\\py.exe",
+            "args": ["-3", "${ZCODE_PLUGIN_ROOT}\\hooks\\continuity.py", "hook"],
+            "timeoutMs": 5000
+          }
+        ]
+      }
+    ]
+  }
+}

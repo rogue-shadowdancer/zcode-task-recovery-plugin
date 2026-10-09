@@ -1,0 +1,15 @@
+{
+  "name": "zcode-task-recovery",
+  "version": "0.1.0",
+  "description": "Preserve, audit, and resume unfinished ZCode tasks across restarts, shutdowns, updates, crashes, and power loss. GLM/ZCode adaptation of the recover-codex-tasks design: lifecycle hooks, single-writer recovery lease, manifests, and read-only reconciliation.",
+  "author": {
+    "name": "rogue-shadowdancer",
+    "url": "https://github.com/rogue-shadowdancer"
+  },
+  "homepage": "https://github.com/rogue-shadowdancer/zcode-task-recovery-plugin",
+  "repository": "https://github.com/rogue-shadowdancer/zcode-task-recovery-plugin",
+  "license": "MIT",
+  "keywords": ["zcode", "recovery", "continuity", "task-recovery", "hooks"],
+  "skills": "./skills/",
+  "hooks": "./hooks/"
+}
